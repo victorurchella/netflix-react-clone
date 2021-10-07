@@ -1,0 +1,41 @@
+.featured { height: 100vh }
+
+.featured-vertical { width: inherit; height: inherit; background: linear-gradient(to top, #121212 , transparent ); display: flex; flex-direction: column; justify-content: center; padding: 70px 0 10vh 60px;}
+
+.featured-name { font-size: 60px; font-weight: bold }
+
+.featured-info { font-size: 18px; font-weight: bold; margin: 15px 0 0 0 }
+
+.featured-relevance, .featured-year, .featured-seasons { display: inline-block; margin: 0 15px 0 0 }
+
+.featured-relevance { color: #00af00 }
+
+.featured-description { margin: 15px 0 0 0; font-size: 20px; max-width: 40%; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical }
+
+.featured-buttons { margin: 15px 0 0 0 }
+
+.featured-watchButton, .featured-addlistButton { display: inline-block; font-size: 20px; font-weight: bold; padding: 12px 25px; border-radius: 5px; text-decoration: none; margin: 0 10px 0 0; transition: 0.2s ease-in-out }
+.featured-watchButton:hover, .featured-addlistButton:hover { opacity: 0.8 }
+
+.featured-watchButton { background-color: #f6f6f6; color: #000 }
+
+.featured-addlistButton { background-color: #212121; color: #f6f6f6 }
+
+.featured-genres { margin: 15px 0 0 0; font-size: 18px; color: #eee }
+
+@media (max-width: 760px) {
+
+    .featured { height: 90vh }
+
+    .featured-vertical { padding: 70px 0 10vh 20px; }    
+
+    .featured-name { font-size: 40px }
+
+    .featured-info { font-size: 18px }
+
+    .featured-description { font-size: 16px; max-width: 100%; margin: 0 30px 0 0 }
+    
+    .featured-watchButton, .featured-addlistButton { font-size: 16px }
+    
+    .featured-genres { font-size: 16px }
+}
